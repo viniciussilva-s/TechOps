@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang='pt-br'>
+
+<head>
+    <title>EX1 </title>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <!-- Shortcut -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">    <!-- <link rel='shortcut icon' href='./assets/img/favicon.png' type='image/png'> -->
+    <style>
+    
+        * {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          color: #000000;
+          font-family: 'Gentium Book Basic', serif;
+          margin: 0;
+          overflow: hidden;
+          padding: 0;
+          text-decoration: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
+          color: #ecf0f1;
+
+        }
+        div[class*="home"]{
+            background-color: #000c01;
+        }
+        div[class*="home"] .banner_principal {
+          background: #ccc url("../materiais/ex1/fundo.jpg") center / cover no-repeat;
+          height: 200px;
+          width: 100%;
+          border-radius: 4px;
+          animation: modo_opacity 5s infinite;
+        }
+        .energia {
+            background: url(../materiais/ex1/energia-verde.png)  no-repeat;
+            background-size: cover;
+            background-position-y: bottom;
+        }
+        .heineken {
+            background: url(../materiais/ex1/heineken.png) no-repeat;
+            background-size: cover;
+            background-position-x:right;
+            background-position-y:bottom;
+        }
+        .aprecie {
+            background: url(../materiais/ex1/aprecie-com-moderacao.png) no-repeat;
+            background-size: cover;
+            background-position-x: right;
+        }
+        .itens{
+            top: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+        }
+        div[class*="home"]{
+            position: relative;
+        }
+        .text {
+          position: absolute;
+          top: 5rem;
+          margin: 1rem;
+          padding: 2px 4.5px;
+          font-weight: bold;
+          font-family: 'Gentium Book Basic', serif;
+        }
+        div[class*="home"] .text  h5{
+            font-size: 1.3rem;
+        }
+        div[class*="home"] .text  h3{
+            font-size: 2rem;
+        }
+        div[class*="home"] .text-right {            
+            right: 0;
+        }
+        .description {
+            position: absolute;
+            width: 18%;
+            bottom: 0;
+            margin: 1.4rem;
+        }
+        .description p{
+            font-size: 0.7rem;
+        }
+
+        @keyframes modo_opacity {
+            0% {
+            opacity: 0.3;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @media (min-width: 767px) {
+          div[class*="home"] .banner_principal {
+            height: 300px;
+          }
+        }
+      </style>
+</head>
+
+<body>
+   <div class="home">
+    <div class="banner_principal"></div>
+    <div class="itens energia"></div>
+    <div class="itens heineken"></div>
+    <div class="itens aprecie"></div>
+
+    <div class="text text-left">
+       <h5>Nosso novo ingrediente:</h5>
+       <h3>Energia Verde.</h3>
+    </div>
+    <div class="text text-right">
+       <h5>Produzida com energia</h5>
+       <h3>100% renovável.</h3>
+    </div>
+    <div class="description">
+        <p>
+           Produção utilizando energia 100%
+            verde nas fábricas de Alagoinhas
+            (BA),Araraquara (SP) e Ponta Grossa
+            (PR). Cada dia mais verde.Saiba mais 
+            no site: www.heineken.com/br
+        </p>
+    </div>
+    <!-- <div class="title-wrapper">
+        Lorem
+    </div> -->
+    <!-- <div class="description-wrapper">
+      <div class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum totam optio recusandae? Ad id officiis obcaecati ullam amet minima quod ipsam consequuntur, quas libero, quos praesentium dolorum aperiam! Aspernatur, ipsa.
+      </div>
+    </div> -->
+   </div>
+
+
+</body>
+
+</html>
