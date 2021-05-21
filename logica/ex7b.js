@@ -5,7 +5,6 @@
 // o campo “requestBody” não seja null ou undefined
 
 var new_dataLayer = [];
-
 dataLayer.map(function (elm, val) {
     if (typeof (elm) == "object") {
         if (elm.event == "xhr response" && elm.event != "undefined") {
@@ -15,3 +14,4 @@ dataLayer.map(function (elm, val) {
         }
     }
 })
+console.log(new_dataLayer);

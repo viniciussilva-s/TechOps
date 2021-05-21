@@ -2,7 +2,7 @@
 // 1. Desenvolver dois códigos JavaScript (ou seja, “ex1a.js” e “ex1b.js”) para extrair os seguintes dados do
 // dataLayer:
 // a. Etapa de “Categoria”: quantidade de itens e seus Ids
-
+// https://www.americanas.com.br/categoria/celulares-e-smartphones?chave=pfm_hm_tt_1_0_celulares
 var categories = [];
 dataLayer[0].payload_page_load.publications.contenttop1.component.children.map(function (elm, val) {
     n_category = { "title": elm.title, "id": elm._id };

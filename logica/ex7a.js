@@ -14,3 +14,4 @@ for (var item of document.querySelectorAll(".js-productClick")) {
         })
     }
 }
+console.log(lista);

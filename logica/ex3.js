@@ -12,7 +12,7 @@ function techOpsPrint_controllers(start, end, steps = 1) {
         for (let index = start;
             (start < end) ? index <= end : index >= end;
             index = (start < end) ? index + steps : index - steps) {
-            var return_string = `${((index % 3) == 0) ? "Tech" : ""}${((index % 5) == 0) ? "Ops" : ""}`;
+            let return_string = `${((index % 3) == 0) ? "Tech" : ""}${((index % 5) == 0) ? "Ops" : ""}`;
             console.log((return_string == "") ? index : return_string);
         }
     } else {

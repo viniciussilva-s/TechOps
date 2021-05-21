@@ -12,3 +12,4 @@ lista.lista1.map(function (item) {
         lista.lista3.push(item)
 
 });
+console.log(lista);

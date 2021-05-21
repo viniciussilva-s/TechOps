@@ -28,15 +28,18 @@
           -webkit-user-select: none;
           user-select: none;
           color: #ecf0f1;
+          font-size: 14px;
 
         }
         div[class*="home"]{
             background-color: #000c01;
+            width: 300px;
+
         }
         div[class*="home"] .banner_principal {
-          background: #ccc url("../materiais/ex1/fundo.jpg") center / cover no-repeat;
+            background: #ccc url("./assets/fundo.jpg") center / cover no-repeat;
           height: 200px;
-          width: 100%;
+          width: 300px;
           border-radius: 4px;
           animation: modo_opacity 5s infinite;
         }
@@ -44,28 +47,29 @@
             background: url(../materiais/ex1/energia-verde.png)  no-repeat;
             background-size: cover;
             background-position-y: bottom;
-            animation: translating-LR 5s forwards;
+            animation: translating-LR 7s infinite;
 
         }
         .heineken {
             background: url(../materiais/ex1/heineken.png) no-repeat;
-            background-size: cover;
+            background-size: cover; 
             background-position-x:right;
             background-position-y:bottom;
             animation: rotate 5s forwards;
 
         }
         .aprecie {
-            background: url(../materiais/ex1/aprecie-com-moderacao.png) no-repeat;
+            background: url(./assets/aprecie-com-moderacao.png) no-repeat;
             background-size: cover;
             background-position-x: right;
-            animation: translating-RL 5s forwards;
+            animation: translating-LR 5s infinite;
+            right: 0;
         }
         .itens{
             top: 0;
             position: absolute;
-            height: 100%;
-            width: 100%;
+            height: 50%;
+            width: 50%;
             border-radius: 4px;
 
         }
@@ -74,12 +78,19 @@
         }
         .text {
           position: absolute;
-          top: 5rem;
+          bottom: 0rem;
           margin: 1rem;
           padding: 2px 4.5px;
           font-weight: bold;
           font-family: 'Gentium Book Basic', serif;
-          animation: modo_opacity 5s forwards;
+
+        }
+        .text-right{
+            animation: translating-out 5s ease-in  ;
+
+        }
+        .text-left{
+            animation: translating-LR 10s forwards;
 
         }
         div[class*="home"] .text  h5{
@@ -93,9 +104,9 @@
         }
         .description {
             position: absolute;
-            width: 18%;
+            width: 90%;
             bottom: 0;
-            margin: 1.4rem;
+            margin: 0.6rem;
             animation: modo_opacity 5s forwards;
 
         }
@@ -103,6 +114,10 @@
             font-size: 0.7rem;
             
         }
+
+    
+
+
         @keyframes rotate {
             0% {
             transform: rotateZ(9deg);
@@ -110,13 +125,14 @@
             100% {
                 transform: rotateZ(0deg);
             }
+
         }
-        @keyframes translating-RL {
+        @keyframes translating-out {
             0% {
-            transform: translate(200px, 0px);
+                transform: translate(-30px, 0px);
             }
             100% {
-                transform: translate(0px, 0px);
+            transform: translate(300px, 0px);
             }
         }
         @keyframes translating-LR {
@@ -150,15 +166,15 @@
     <div class="itens heineken "></div>
     <div class="itens aprecie "></div>
 
-    <div class="text text-left">
+    <!-- <div class="text text-left">
        <h5>Nosso novo ingrediente:</h5>
        <h3>Energia Verde.</h3>
-    </div>
+    </div> -->
     <div class="text text-right">
        <h5>Produzida com energia</h5>
        <h3>100% renovável.</h3>
     </div>
-    <div class="description">
+    <!-- <div class="description">
         <p>
            Produção utilizando energia 100%
             verde nas fábricas de Alagoinhas
@@ -166,7 +182,7 @@
             (PR). Cada dia mais verde.Saiba mais 
             no site: www.heineken.com/br
         </p>
-    </div>
+    </div> -->
     <!-- <div class="title-wrapper">
         Lorem
     </div> -->
